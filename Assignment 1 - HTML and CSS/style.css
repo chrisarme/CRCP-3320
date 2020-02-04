@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    color: black;
+}
+
+table {
+    background-color: black;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #DCDCDC;
+    border: 1px solid black;
+}
+
+td {
+    background-color: white;
+    border: 1px solid black;
+}
+
+tr {
+    text-align: center;
+    color: black;
+    margin: 10px;
+}
