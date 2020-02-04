@@ -1,1 +1,1 @@
-# My GitHug Page
+# My GitHub Page
