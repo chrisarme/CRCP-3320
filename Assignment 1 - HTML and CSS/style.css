@@ -26,3 +26,11 @@ tr {
     color: black;
     margin: 10px;
 }
+
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
