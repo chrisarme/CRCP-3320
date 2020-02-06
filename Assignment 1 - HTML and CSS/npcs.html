@@ -15,33 +15,66 @@
         <ul>
             <li><h3>Melee:</h3></li>
             <ul>
-                <li><b>Dog/Wolf</b> - A fast moving canine with low health</li>
-                <li><b>Goblin Swordsman</b> - A weak goblin with moderate melee range, movement, and health</li>
-                <li><b>Heavy Soldier</b> - A slow moving, aggressive enemy wielding a large great sword</li>
-                <li><b>Dark Wraith</b> - A terrifying dark spirit that can slip between realms</li>
-                <li><b>Shield</b> - A large enemy equipped with only a massive shield</li>
+                <li><b>Dog/Wolf</b> -<code>A fast moving canine with low health</code></li>
+                <li><b>Goblin Swordsman</b> - <code>A weak goblin with moderate melee range, movement, and health</code></li>
+                <li><b>Heavy Soldier</b> - <code>A slow moving, aggressive enemy wielding a large great sword</code></li>
+                <li><b>Dark Wraith</b> - <code>A terrifying dark spirit that can slip between realms</code></li>
+                <li><b>Shield</b> - <code>A large enemy equipped with only a massive shield</code></li>
             </ul>
 
             <li><h3>Ranged:</h3></li>
             <ul>
-                <li><b>Crystal Kid</b> - A small living crystal that shoots crystals out of itself, but dies to nearly any attack</li>
-                <li><b>Adept Mage</b> - A mage that attacks with a multitude of spells from afar, but has little mobility</li>
-                <li><b>Goblin Chucker</b> - A weak goblin that throws vials that debuff those hit</li>
-                <li><b>Vampyre</b> - An agile undead that attacks with blood and, given the chance, can drain blood</li>
-                <li><b>Elemental Mage</b> - A dangerous mage with exclusive training in a specific elemental type</li>
+                <li><b>Crystal Kid</b> - <code>A small living crystal that shoots crystals out of itself, but dies to nearly any attack</code></li>
+                <li><b>Adept Mage</b> - <code>A mage that attacks with a multitude of spells from afar, but has little mobility</code></li>
+                <li><b>Goblin Chucker</b> - <code>A weak goblin that throws vials that debuff those hit</code></li>
+                <li><b>Vampyre</b> - <code>An agile undead that attacks with blood and, given the chance, can drain blood</code></li>
+                <li><b>Elemental Mage</b> - <code>A dangerous mage with exclusive training in a specific elemental type</code></li>
             </ul>
 
             <li><h3>Bosses:</h3></li>
             <ul>
-                <li><b>Goliath</b> - A massive, but slow moving, monster with destuctive unarmed attacks</li>
-                <li><b>Master Mage</b> - A mage with incredible knowledge of spells and uses them zealously</li>
+                <li><b>Goliath</b> - <code>A massive, but slow moving, monster with destuctive unarmed attacks</code></li>
+                <li><b>Master Mage</b> - <code>A mage with incredible knowledge of spells and uses them zealously</code></li>
                 <li><b>Ý̢̳͙̦̻v̴̢͎̗̘̗̼̦͇͉̮̘̙͓͎̘̟̬̤̩̀j̧̧͖̲̯͟͞i̴̡͝͏͇͖̘̮͔̟͈̼͓ļ̭̮̫̪͇̩̫̮͡-̶̷̭̲̜̘͚́͠Ģ̵̨̞̗͈̰̻̖͈̠ͅr̨̡̛͏̪̞̜̰̮̰͈̫͔̭̘͝t͞͏̤̯͙̫̯̘̱̩̫̼͘ḩ̡̖͙̠̠̼͍̲̤̟̻̞̳̜͇͖̳t҉̵̻̼̺̖̫͓̺̬͘͢ȩ̷̴̲̫̱͈̤͍͈͠͞/</b> - T̨̛̛̟̞͔͔͔̘͙͓̹H͢҉͔̮̦̯E̡̺̼̙̟̹̙͔̕ ̵̢͈͙̰̹̜̹̭̫͎̫̹̪͕͖̬̥̹̩̮̀͜͠E̡̯̰̬̲̗̻̦̟̲̻̭̠͓̩͓̫̙͢N̶̷̶̲͔̺̖̬̟̭̠̙͟͞ͅD̷̶̵͕̜̖̪̣̮͕̠̯͔͙͖<li>
             </ul>
         </ul>
 
         <h2>Friendly NPCs</h2>
         <p>Though friendly NPCs are primarily designed to give the player spells and modifiers, the requirements for them to be given differ per NPC, tentatively known as “quests”. NPCs may have randomized quests with randomized rewards. However, some specific NPCs may have static quests, rewards, and/or locations. For example, there may be a tutorial NPC that always asks the player to kill a “Goblin Swordsman” and always rewards the player with a “Fireball” spell.</p>
+        <p>Some examples of friendly NPCs the player might meet are:</p>
 
+        <ul>
+            <li><b>Merchant</b> - <code>Sells random spells and modifiers to the player for a type of currency</code></li>
+            <li><b>Hunter</b> - <code>Gives the player a reward for killing certain enemies</code></li>
+            <li><b>Mage Developer</b> - <code>Gives the player a reward for using a specific spell in certain circumstances</code></li>
+            <li><b>Mage Researcher</b> - <code>Gives the player a reward if presented with an interestingly shaped spell</code></li>
+            <li><b>Blood Mage</b> - <code>Gives the player a reward if they give the mage a portion of their health</code></li>
+        </ul>
+
+        <br><br>
+        <p>If you have suggestions for a NPC, send it in the form below.</p>
+
+        <form>
+            NPC Type:
+            <select name="NPC type">
+                <option value="unkown">Unkown</option>
+                <option value="hostile">Hostile</option>
+                <option value="friendly">Friendly</option>
+            </select>
+
+            <br><br>
+            NPC Name:
+            <input type="text" name="NPC name" value="" required>
+
+            <br><br>
+            NPC Description: <br>
+            <input type="text" name="NPC description" value="" size="100" class="NPC_description">
+
+            <br><br>
+            <button type="button" name="submitWIP">Submit</button>
+        </form>
+
+        <br><br>
 
         <a href="Index.html">To main page</a> <br>
         <a href="spells.html">To spell shaping details</a>
