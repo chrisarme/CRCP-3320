@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript in HTML</title>
+    </head>
+    <body>
+        <script>
+            function giveAlert()
+            {
+                alert("You clicked the button");
+            }
+        </script>
+
+        <h1>JavaScript in HTML</h1>
+        <hr/>
+        <button onClick="giveAlert()">Click Me!</button>
+        <hr/>
+        <h2>Change HTML Text</h2>
+        <script>
+            // can place multiple <script> elements
+            function changeP1Text()
+            {
+                let p = document.getElementById("p1");
+                p.innerHTML = "This paragraph has changed";
+            }
+        </script>
+
+        <p id="p1">This is paragraph p1</p>
+        <button onClick="changeP1Text()">Change Text</button>
+
+        <hr/>
+        <h2>Changing HTML Style</h2>
+        <script>
+            function makeP2Blue()
+            {
+                // get element with id "p2"
+                let p = document.getElementById("p2");
+
+                // change color of the element to blue
+                p.style.color = "blue";
+            }
+
+            function makeP2Black()
+            {
+                let p = document.getElementById("p2");
+                p.style.color = "black";
+            }
+        </script>
+        <p id="p2" onMouseOver="makeP2Blue()" onMouseOut="makeP2Black()">This is paragraph p2</p>
+    </body>
+</html>

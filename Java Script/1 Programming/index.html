@@ -15,12 +15,87 @@
             console.log(integer);
             let myNumber = 13.8945;
             console.log(myNumber);
-            console.log(4 ** 7);
+            console.log(4 ** 7); // exponential
 
             let myFirstString = "This is a string";
             let mySecondString = 'This is also a string';
+
             let valueString = "The value of interger is " + integer;
             console.log(valueString);
+
+            let myBoolean = true;
+
+            let x = 76;
+
+            let lessThan5 = x < 5;
+
+            console.log(5 == '5');
+            /// === operator returns true if equal values and equal types
+            console.log(5 === '5');
+
+            // conditionals
+            if (x < 0)
+            {
+                console.log("x is negative");
+            }
+            else if (x == 0)
+            {
+                console.log("x is zero");
+            }
+            else
+            {
+                console.log("x is positive");
+            }
+
+            // loops
+            for (var i = 0; i < 10; i++)
+            {
+                console.log(i);
+            }
+
+
+            // functions
+            function sayHello(name)
+            {
+                console.log("Hello, " + name + "!");
+            }
+
+            sayHello("Chris");
+
+            function add(a, b, c)
+            {
+                let sum = a + b + c;
+                return sum;
+            }
+
+            let mySum = add(56, 100, 45);
+            console.log(mySum);
+
+            // functions are types, set variable as a function!
+            let myFunction = function(value)
+            {
+                return 2 ** value;
+            }
+
+            console.log(myFunction);
+
+            let twoPower4 = myFunction(4);
+            console.log(twoPower4);
+
+            // arrays
+            let numbers = [1, 2, 3, 4, 5];
+            let empty = [];
+
+            numbers[0] = 100;
+            console.log(numbers);
+            console.log(numbers[3]);
+
+            numbers.push(6);
+            console.log(numbers);
+
+            numbers.pop();
+            console.log(numbers);
+
         </script>
     </body>
 </html>
