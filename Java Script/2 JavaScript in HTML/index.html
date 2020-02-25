@@ -47,5 +47,86 @@
             }
         </script>
         <p id="p2" onMouseOver="makeP2Blue()" onMouseOut="makeP2Black()">This is paragraph p2</p>
+
+        <hr/>
+        <h2>Adding HTML Elements with InnerHTML</h2>
+        <script>
+            function addElementsToList1()
+            {
+                let fruits = ["apple", "strawberry", "kiwi"];
+                let ul = document.getElementById("list1");
+
+                for (let i = 0; i < fruits.length; i++)
+                {
+                    let li = "<li>" + fruits[i] + "</li>";
+                    ul.innerHTML = ul.innerHTML + li;
+                }
+            }
+        </script>
+        <ul id="list1">
+
+        </ul>
+        <br/>
+        <button onClick="addElementsToList1()">Add Elements</button>
+
+        <hr/>
+        <h2>Adding HTML Elements with <code>createElement() + appendChild()</code></h2>
+        <script>
+            function addElementsToList2()
+            {
+                let fruits = ["orange", "banana", "melon"];
+                let ul = document.getElementById("list2");
+
+                for (let i = 0; i < fruits.length; i++)
+                {
+                    let li = document.createElement("li");
+                    li.innerHTML = fruits[i];
+                    ul.appendChild(li);
+                }
+            }
+        </script>
+        <ul id="list2">
+        </ul>
+        <br/>
+        <button onClick="addElementsToList2()">Add Elements</button>
+
+        <hr/>
+        <h2>Getting Input Values from the User</h2>
+        <script>
+            function addFruitFromUser()
+            {
+                let input = document.getElementById("fruitName");
+                let inputValue = input.value;
+                let ul = document.getElementById("list3");
+
+                let li = document.createElement("li");
+                li.innerHTML = inputValue;
+                ul.appendChild(li);
+            }
+        </script>
+        <form>
+            Enter a Fruit: <input id ="fruitName" type="text"/><br/>
+        </form>
+        <button onClick="addFruitFromUser()">Add Fruit</button>
+        <ul id="list3">
+        </ul>
+
+        <hr/>
+        <h2>Using Number Inputs</h2>
+        <script>
+            function squareTheNumber()
+            {
+                let input = document.getElementById("number");
+
+                // parse just in case
+                let inputNumber = parseInt(input.value);
+                alert(inputNumber ** 2);
+            }
+        </script>
+        <form>
+            Enter a Number: <input id="number" type="number"><br/>
+        </form>
+
+        <button onClick="squareTheNumber()">Square the Number</button>
     </body>
 </html>
